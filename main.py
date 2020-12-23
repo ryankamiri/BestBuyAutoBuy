@@ -68,11 +68,11 @@ if r.status_code == 200:
     print("Checking out product!")
     sleep(5)
     pyautogui.click(200, 50)
-    #keyboard.write("javascript:{document.querySelector('.btn.btn-lg.btn-block.btn-primary.button__fast-track').click();}") #uncomment this on release
+    keyboard.write("javascript:{document.querySelector('.btn.btn-lg.btn-block.btn-primary.button__fast-track').click();}") #uncomment this on release
     keyboard.press_and_release('enter')
     print("Bought Item!")
     print("Finished executing.")
 
     #Made by RedBall
 else:
-    print(f"ERRER BUY IT YOURSELF!!!! {r.status_code} {r.text}")
+    print(f"ERROR BUY IT YOURSELF!!!! {r.status_code} {r.text}")
